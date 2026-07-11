@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSpace | Futuro em suas Mãos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar container" aria-label="Navegação principal">
+            <a href="#" class="logo" aria-label="CyberSpace Home">Cyber<span>Space</span></a>
+            <ul class="nav-links">
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <button class="btn-primary" id="cart-btn" aria-label="Abrir carrinho de compras">Carrinho (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <h1 id="hero-title">O amanhã, <br>disponível hoje.</h1>
+                <p>Explore a coleção exclusiva de gadgets cyberpunk e hardware de alta performance para elevar seu setup ao próximo nível.</p>
+                <a href="#produtos" class="btn-cta" aria-label="Ver produtos disponíveis">Ver Coleção</a>
+            </div>
+        </section>
+
+        <section id="produtos" class="products-section container" aria-labelledby="products-title">
+            <h2 id="products-title" class="section-title reveal">Dispositivos em Destaque</h2>
+            
+            <div class="products-grid">
+                <article class="product-card reveal" data-id="1">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600&auto=format&fit=crop" alt="Teclado mecânico customizado com retroiluminação neon roxa" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="product-name">CyberBoard X</h3>
+                        <p>Teclado mecânico óptico com switches de grafeno e resposta de 0.1ms.</p>
+                        <span class="price" data-value="899">R$ 499,00</span>
+                        <button class="btn-buy" aria-label="Adicionar CyberBoard X ao carrinho">Adicionar</button>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-id="2">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?q=80&w=600&auto=format&fit=crop" alt="Mouse gamer sem wireless com linhas futuristas e LEDs azuis" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="product-name">NeonMouse Pro</h3>
+                        <p>Mouse ergonómico sem fios com sensor de 32.000 DPI e carregamento por indução.</p>
+                        <span class="price" data-value="349">R$ 349,00</span>
+                        <button class="btn-buy" aria-label="Adicionar NeonMouse Pro ao carrinho">Adicionar</button>
+                    </div>
+                </article>
+
+                <article class="product-card reveal" data-id="3">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=600&auto=format&fit=crop" alt="Headphone over-ear preto com detalhes iluminados em azul" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="product-name">Synapse Audio</h3>
+                        <p>Headset com cancelamento de ruído neural e áudio espacial 3D nativo.</p>
+                        <span class="price" data-value="299">R$ 299,00</span>
+                        <button class="btn-buy" aria-label="Adicionar Synapse Audio ao carrinho">Adicionar</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section container" aria-labelledby="about-title">
+            <div class="about-content reveal">
+                <h2 id="about-title">Nossa Visão</h2>
+                <p>Na CyberSpace, acreditamos que a tecnologia deve ser uma extensão da capacidade humana. Nascemos com o propósito de desafiar o comum e entregar hardware que redefine os limites da performance e da estética urbana.</p>
+                <p>Cada componente de nossa curadoria passa por testes rigorosos de engenharia, garantindo eficiência máxima, durabilidade extrema e uma experiência visual imersiva e futurista para o seu ecossistema digital.</p>
+            </div>
+        </section>
+    </main>
+
+    <aside id="cart-sidebar" class="cart-sidebar" aria-label="Carrinho de compras lateral">
+        <div class="cart-header">
+            <h2>Seu Carrinho</h2>
+            <button id="close-cart" aria-label="Fechar carrinho">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">R$ 0,00</span>
+            </div>
+            <button id="checkout-btn" class="btn-checkout">Finalizar Compra</button>
+        </div>
+    </aside>
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 CyberSpace. Feito com foco em performance e acessibilidade.</p>
+    </footer>
+
+    <div class="dev-badge" aria-hidden="true">
+        <span>Dev: Leandro Vale</span>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
