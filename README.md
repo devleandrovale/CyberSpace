@@ -7,7 +7,7 @@ O **CyberSpace** é uma landing page de e-commerce conceitual voltada para a ven
 
 Dispositivo interativo criado com o objetivo de aplicar na prática os conceitos de manipulação do DOM e boas práticas modernas de Front-End.
 
-🚀 **[Clique aqui para acessar o projeto em tempo real](https://leandrovale.github.io/cyber-space/)**
+🚀 **[Clique aqui para acessar o projeto em tempo real](https://devleandrovale.github.io/CyberSpace/)**
 
 ---
 
